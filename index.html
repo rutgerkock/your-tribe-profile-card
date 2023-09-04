@@ -7,32 +7,35 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <article>              
-        <div class="foto">
-          <img src="C:\Users\kockr\Downloads\_MG_9057-2 (1).jpg">
-          <div class="tekst">
-            <h1 id="naam">Rutger Kock</h1>
-            <p id="p1">
-            </p>
-          </div>
-        </div>
-        <div class="knoppen">
-          <button class="fiets" onclick="ChangeText()">
-            <img src="C:\Users\kockr\Downloads\map.png" alt="Home">
-          </button>
-          <button class="fiets" onclick="ChangeText2()">
-            <img src="C:\Users\kockr\Downloads\briefcase.png" alt="Image">
-          </button>
-          <button class="fiets" onclick="ChangeText3()">
-            <img src="C:\Users\kockr\Downloads\user.png" alt="Image">
-          </button>
-          <button class="fiets" onclick="ChangeText4()">
-            <img src="C:\Users\kockr\Downloads\bike.png" alt="Image">
-          </button>
-          <button class="fiets" onclick="ChangeText5()">
-            <img src="C:\Users\kockr\Downloads\photo-camera.png" alt="Image">
-          </button>
-        </div>
+    <article id="article"> 
+      <nav>
+        <button id="button1" onclick="Button1()">
+          <img src="C:\Users\kockr\Downloads\user.png" alt="">
+        </button>
+        <button id="button2" onclick="Button2()">
+          <img src="C:\Users\kockr\Downloads\map.png" alt="">
+        </button>
+        <button id="button3" onclick="Button3()">
+          <img src="C:\Users\kockr\Downloads\bike.png" alt="">
+        </button>
+        <button id="button4" onclick="Button4()">
+          <img src="C:\Users\kockr\Downloads\photo-camera.png" alt="">
+        </button>
+      </nav>
+      <div class="text">
+        <h1>Rutger Kock</h1>
+        <div id="text">        
+          <dt>Leeftijd: 18</dt>
+          <br>
+          <dt>Werk: Hoogvliet</dt>
+          <br>
+          <dt>School</dt>
+          <li>HAVO</li>
+          <li>HU ICT</li></div>
+      </div>
+      <div class="afbeelding">
+        <img id="afbeelding" src="C:\Users\kockr\Downloads\_MG_9057-2 (1).jpg" alt="">
+      </div>
     </article>
     <script src="scripts/script.js"></script>
     
