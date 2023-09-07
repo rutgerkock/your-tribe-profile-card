@@ -19,12 +19,13 @@ article {
   display: flex;
   text-align: left;
   background-color: #045574;
-  padding: 9.5rem 1rem;
   height: 22rem;
   width: 35rem;
   border-radius: 5px; 
   box-shadow: rgb(74, 74, 88) 0px 14px 58px 0px;
   overflow: hidden;
+  padding: 0;
+
 } 
 
 h1 {
@@ -34,6 +35,8 @@ h1 {
   font-weight: 450;
   font-size: 200%;
   letter-spacing: 5px;
+  max-height: max-content;
+  white-space: nowrap;  
 }
 
 .front {  
@@ -45,31 +48,51 @@ h1 {
   background-color: transparent;
   border: none;
   transition: margin-left 0.35s ease;  
+  padding: 0;
 }
 
-h2 {
+h2, p {
   margin: 0;
   color: #FFFFFF;
   font-family: "futura-pt", sans-serif;
   font-weight: 100;
   font-size: 250%;
   letter-spacing: 5px;
+  line-height: 3rem;
+  white-space: nowrap;  
+}
+
+p{
+  margin-left: -13rem;
+  margin-right: 1rem;
+  text-align: left;
 }
 
 .arrow {
   background-color: #FFFFFF;
   margin-right: 0.25rem;
-  margin-left: 1.5rem;
   width: 4rem;
   height: 0.14rem;
   border: none;
   transition: 0.35s ease;
 }
 
-.front:hover .arrow {
-  width: 8rem;
+.front.moved .arrow {
+  width: 20rem;
 }
 
 .front.moved {
-  margin-left: -17rem;
+  margin-left: 14rem;
 } 
+
+a:link {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.2rem;
+  color: #FFFFFF;
+}
+
+a:visited {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
