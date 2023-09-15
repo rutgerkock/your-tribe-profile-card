@@ -36,7 +36,10 @@ h1 {
   font-size: 200%;
   letter-spacing: 5px;
   max-height: max-content;
-  white-space: nowrap;  
+  white-space: nowrap;
+  animation-name: naam;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
 }
 
 .front {  
@@ -51,7 +54,7 @@ h1 {
   padding: 0;
 }
 
-h2, p {
+h2{
   margin: 0;
   color: #FFFFFF;
   font-family: "futura-pt", sans-serif;
@@ -59,13 +62,22 @@ h2, p {
   font-size: 250%;
   letter-spacing: 5px;
   line-height: 3rem;
-  white-space: nowrap;  
+  white-space: nowrap;
+  animation-name: naam;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
 }
 
 p{
   margin-left: -13rem;
   margin-right: 1rem;
   text-align: left;
+  color: #FFFFFF;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 100;
+  font-size: 200%;
+  letter-spacing: 5px;
+  white-space: nowrap; 
 }
 
 .arrow {
@@ -75,6 +87,9 @@ p{
   height: 0.14rem;
   border: none;
   transition: 0.35s ease;
+  animation-name: naam;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
 }
 
 .front.moved .arrow {
@@ -95,4 +110,16 @@ a:link {
 a:visited {
   text-decoration: underline;
   color: #FFFFFF;
+}
+
+@keyframes naam {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
