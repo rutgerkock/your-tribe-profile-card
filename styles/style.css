@@ -8,6 +8,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -16,6 +17,7 @@ body {
 }
  
 article {
+  z-index: 999;
   display: flex;
   text-align: left;
   background: linear-gradient(90deg, rgba(4,85,116,1) 0%, rgba(3,113,155,1) 100%);
@@ -103,7 +105,7 @@ a:link {
   color: #FFFFFF;
 }
 
-a:visited {
+a:visited { 
   text-decoration: underline;
   color: #FFFFFF;
 }
@@ -122,4 +124,27 @@ a:visited {
 
 img {
   width: 2rem;
+}
+
+#rockets {  
+  left: 0;
+  margin-left: -19rem;
+  position: fixed;
+  top: 43%;
+  width: 20%;
+}
+
+.rocketAnimation {
+  animation: rockets 700ms ease-in forwards;
+}
+
+@keyframes rockets {
+  0% {
+    transform: translateX(0vw);
+    scale: 0.9;
+  }
+  100% {
+    transform: translateX(120vw);
+    scale: 1.1;
+  }
 }
