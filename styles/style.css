@@ -127,8 +127,7 @@ img {
 }
 
 #rockets {  
-  left: 0;
-  margin-left: -19rem;
+  left: -19rem;
   position: fixed;
   top: 43%;
   width: 20%;
