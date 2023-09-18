@@ -151,6 +151,8 @@ img {
 @media (max-width: 600px) {
   body {
     rotate: 90deg;
+    overflowY: hidden;
+    overflowX: hidden;
   }
 
   .icons {
