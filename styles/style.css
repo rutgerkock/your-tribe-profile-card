@@ -14,6 +14,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: aliceblue;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
  
 article {
@@ -91,7 +93,7 @@ h2{
 }
 
 .front.moved .arrow {
-  width: 23rem;
+  width: 35vw;
 }
 
 .front.moved {
@@ -109,6 +111,7 @@ a:visited {
   text-decoration: underline;
   color: #FFFFFF;
 }
+
 
 @keyframes naam {
   0% {
@@ -142,7 +145,7 @@ img {
     scale: 0.9;
   }
   100% {
-    transform: translateX(120vw);
+    transform: translateX(200vw);
     scale: 1.1;
   }
 }
@@ -151,8 +154,8 @@ img {
 @media (max-width: 600px) {
   body {
     rotate: 90deg;
-    overflowY: hidden;
-    overflowX: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   .icons {
@@ -170,4 +173,21 @@ img {
     margin-left: -7rem;
     margin-right: 5rem;
   }
+}
+
+.checkbox-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-label img {
+  cursor: pointer; 
+}
+
+.checkbox-label input[type="checkbox"] + img {
+  border: none; 
+}
+
+.checkbox-label input[type="checkbox"]:checked + img {
+  border: 2px solid green;
 }
