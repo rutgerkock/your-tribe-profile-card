@@ -173,6 +173,20 @@ img {
     margin-left: -7rem;
     margin-right: 5rem;
   }
+  .rocketAnimation {
+    animation: rockets 700ms ease-in forwards;
+  }
+  
+  @keyframes rockets {
+    0% {
+      transform: translateX(0vw);
+      scale: 0.9;
+    }
+    100% {
+      transform: translateX(200vH);
+      scale: 1.1;
+    }
+  }
 }
 
 .checkbox-label input[type="checkbox"] {
