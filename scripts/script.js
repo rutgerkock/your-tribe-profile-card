@@ -6,7 +6,6 @@ toggle.addEventListener('click', () => {
   const frontDiv = document.querySelector('.front');
   frontDiv.classList.toggle('moved');
   text.style.display = 'none';
-  checkbox.checked = true;
   const rocket = document.querySelector('#rockets');
   rocket.classList.toggle('rocketAnimation');
   if (arrowH2.textContent === '<') {
