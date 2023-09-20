@@ -153,9 +153,12 @@ img {
 
 @media (max-width: 600px) {
   body {
-    rotate: 90deg;
     overflow-y: hidden;
     overflow-x: hidden;
+  }
+  
+  article {
+    rotate: 90deg;
   }
 
   .icons {
@@ -172,20 +175,6 @@ img {
   .icons{
     margin-left: -7rem;
     margin-right: 5rem;
-  }
-  .rocketAnimation {
-    animation: rockets 700ms ease-in forwards;
-  }
-  
-  @keyframes rockets {
-    0% {
-      transform: translateX(0vw);
-      scale: 0.9;
-    }
-    100% {
-      transform: translateX(200vH);
-      scale: 1.1;
-    }
   }
 }
 
