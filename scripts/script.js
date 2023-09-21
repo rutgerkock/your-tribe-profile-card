@@ -5,19 +5,14 @@ const text = document.getElementById('text');
 toggle.addEventListener('click', () => {
   const frontDiv = document.querySelector('.front');
   frontDiv.classList.toggle('moved');
-  text.style.display = 'none';
   const rocket = document.querySelector('#rockets');
   rocket.classList.toggle('rocketAnimation');
-  if (arrowH2.textContent === '<') {
-    arrowH2.textContent = '';
-  } else {
-    arrowH2.textContent = '<';
-  }
 });
-checkbox.addEventListener('change', function() {
-  if (checkbox.checked) {
-    text.style.display = 'flex';
-  } else {
-    text.style.display = 'none';
-  }
+
+const dark = document.getElementById('testButton');
+
+dark.addEventListener('click', () => {
+  document.querySelector("body").classList.toggle("darkMode");
+  document.querySelector("article").classList.toggle("darkMode2");
+
 });
