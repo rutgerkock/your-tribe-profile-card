@@ -5,6 +5,8 @@ const text = document.getElementById('text');
 toggle.addEventListener('click', () => {
   const frontDiv = document.querySelector('.front');
   frontDiv.classList.toggle('moved');
+  const buttons = document.querySelector('.buttons');
+  buttons.classList.toggle('moved2');
   const rocket = document.querySelector('#rockets');
   rocket.classList.toggle('rocketAnimation');
 });

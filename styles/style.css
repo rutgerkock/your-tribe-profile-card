@@ -38,9 +38,6 @@ h1 {
   font-weight: 450;
   font-size: 200%;
   letter-spacing: 5px;
-  animation-name: naam;
-  animation-duration: 1s;
-  animation-iteration-count: 2;
   white-space: nowrap;
 }
 
@@ -53,8 +50,8 @@ h1 {
   height: 4vw;
   background-color: transparent;
   border: none;
-  transition: margin-left 0.35s ease;  
   padding: 0;
+  transition: 0.35s ease;
 }
 
 h2{
@@ -65,31 +62,23 @@ h2{
   letter-spacing: 5px;
   line-height: 3rem;
   white-space: nowrap;
-  animation-name: naam;
-  animation-duration: 1s;
-  animation-iteration-count: 2;
 }
 
 .arrow {
   background-color: #FFFFFF;
   margin-right: 0.25rem;
-  width: 4rem;
+  width: 10vw;
   height: 2px;
   border: none;
-  transition: 0.35s ease;
-  animation-name: naam;
-  animation-duration: 1s;
-  animation-iteration-count: 2;
-  margin-left: -2vw;
+  margin-left: -10vw;
 }
 
 .front.moved .arrow {
-  width: 15vw;
-  margin-left: 0.5vw;
+  margin-left: 0vw;
 }
 
 .front.moved {
-  margin-left: 21rem;
+  margin-left: 65vw;
 } 
 
 #rockets {
@@ -135,15 +124,12 @@ h2{
   }
 }
 
-a {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items:center;
+.buttons {
+  width: 0;
+  height: 0;
 }
 
-#githubSVG, #mailSVG {
+#githubSVG, #mailSVG, #testButtonSVG {
   position: absolute;
   width: 2.5rem;
   height: 2.5rem;
@@ -151,27 +137,38 @@ a {
   border-radius: 50%;
   padding: 0.5vw;
   box-shadow: -0.2rem 0.2rem 0 0 #FFFFFF;
-  transform: translateY(400%);
+  top: 6.5rem;
 }
 
 #githubSVG {
-  left: 0.5rem;
+  left: 9.5rem;
 }
 
 #mailSVG {
-  left: 4rem;
+  left: 12rem;
+}
+
+#testButtonSVG {
+  left: 14.5rem;
 }
 
 #githubSVG:active {
   box-shadow: -0.1rem 0.1rem 0 0 #FFFFFF;
-  left: 0.4rem;
-  transform: translateY(405%);
+  left: 8.4rem;
+  top: 6.6rem;
 }
 
 #mailSVG:active {
   box-shadow: -0.1rem 0.1rem 0 0 #FFFFFF;
-  left: 3.9rem;
-  transform: translateY(405%);
+  left: 10.9rem;
+  top: 6.6rem;
+}
+
+#testButtonSVG:active {
+  box-shadow: -0.1rem 0.1rem 0 0 #FFFFFF;
+  left: 13.4rem;
+  top: 6.6rem;
+
 }
 
 p {
@@ -183,32 +180,6 @@ p {
   margin-left: -55%;
   margin-right: 1vw;
   white-space: nowrap;
-}
-
-#testButton {
-  background-color: transparent;
-  border: none;
-  color: white;
-  width: 0;
-  height: 0;
-}
-
-#testButtonSVG {
-  position: relative;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 3px solid #FFFFFF;
-  border-radius: 50%;
-  padding: 0.5vw;
-  box-shadow: -0.2rem 0.2rem 0 0 #FFFFFF;
-  transform: translateY(350%);
-  left:7rem;
-}
-
-#testButtonSVG:active {
-  box-shadow: -0.1rem 0.1rem 0 0 #FFFFFF;
-  left: 6.9rem;
-  transform: translateY(355%);
 }
 
 .darkMode {
