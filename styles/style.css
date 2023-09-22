@@ -137,37 +137,37 @@ h2{
   border-radius: 50%;
   padding: 0.5vw;
   box-shadow: -0.2rem 0.2rem 0 0 #FFFFFF;
-  top: 6.5rem;
+  top: 63%;
 }
 
 #githubSVG {
-  left: 9.5rem;
+  left: 34%;
 }
 
 #mailSVG {
-  left: 12rem;
+  left: 37.5%;
 }
 
 #testButtonSVG {
-  left: 14.5rem;
+  left: 41%;
 }
 
 #githubSVG:active {
   box-shadow: -0.1rem 0.1rem 0 0 #FFFFFF;
-  left: 8.4rem;
-  top: 6.6rem;
+  left: 33.9%;
+  top: 63.1%;
 }
 
 #mailSVG:active {
   box-shadow: -0.1rem 0.1rem 0 0 #FFFFFF;
-  left: 10.9rem;
-  top: 6.6rem;
+  left: 37.6%;
+  top: 63.1%;
 }
 
 #testButtonSVG:active {
   box-shadow: -0.1rem 0.1rem 0 0 #FFFFFF;
-  left: 13.4rem;
-  top: 6.6rem;
+  left: 40.9%;
+  top: 63.1%;
 
 }
 
